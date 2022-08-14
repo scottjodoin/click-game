@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Picture Line</title>
+</head>
+<body>
+  <header>
+    <strong>Picture Line Game</strong>
+    <label for=dot-count >Number of dots:</label>
+    <input id=dot-count name=dot-count min=1 max=100 value=9 type="number" />
+    <label for=picture>Picture URL:</label>
+    <input name=picture id=picture-url value="https://pbs.twimg.com/profile_images/616261201228464128/E7j8ho4W.jpg" type="text" />
+    <select id=difficulty name=difficulty value=easy>
+      <option value=easy>Easy mode</option>
+      <option value=hard>Hard mode</option>
+      <option value=extreme>Extreme Mode</option>
+    </select>
+    <button id=start-game>Start Game</button>
+  </header>
+  <div id=game-container>
+    <canvas id=game width=1000 height=600>
+
+    </canvas>
+  </div>
+  <script src="pictureLine.js"></script>
+</body>
+</html>
